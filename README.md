@@ -123,7 +123,19 @@ app/build/outputs/apk/debug/
 
 ## 📸 Screenshots
 
-Screenshots will be added in a future update.
+<p align="center">
+  <img src="screenshots/splash-screen.png" width="220">
+  <img src="screenshots/main-screen.png" width="220">
+  <img src="screenshots/donate.png" width="220">
+  <img src="screenshots/create-donation.png" width="220">
+</p>
+
+<p align="center">
+  <img src="screenshots/receive.png" width="220">
+  <img src="screenshots/donation-details.png" width="220">
+  <img src="screenshots/how-to-use.png" width="220">
+  <img src="screenshots/contact-us.png" width="220">
+</p>
 
 ## 👩‍💻 Developer
 
