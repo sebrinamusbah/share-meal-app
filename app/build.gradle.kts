@@ -4,25 +4,34 @@ plugins {
 
 android {
     namespace = "com.example.fooddonationapp"
-    compileSdk = 34  // Changed from 36 to 34 (latest stable)
+   compileSdk = 36  // Changed from 36 to 34 (latest stable)
 
-    defaultConfig {
+      defaultConfig {
         applicationId = "com.example.fooddonationapp"
-        minSdk = 21  // Changed from 26 to 21 to support more devices
-        targetSdk = 34  // Changed from 36 to 34
+        minSdk = 23
+        targetSdk = 34
 
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        // For vector drawables
         vectorDrawables.useSupportLibrary = true
+    }
+
+    signingConfigs {
+        create("release") {
+            storeFile = file("${System.getProperty("user.home")}/.android/share-meal-release.jks")
+            storePassword = project.findProperty("RELEASE_STORE_PASSWORD") as String
+            keyAlias = "share-meal"
+           keyPassword = project.findProperty("RELEASE_KEY_PASSWORD") as String
+        }
     }
 
     buildTypes {
         release {
             isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"

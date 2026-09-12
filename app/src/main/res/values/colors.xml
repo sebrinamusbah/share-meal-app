@@ -30,8 +30,13 @@
     <color name="completed_color">#2196F3</color>
     <color name="expired_color">#F44336</color>
 
-    <!-- Others -->
+       <!-- Others -->
     <color name="gray">#9E9E9E</color>
     <color name="light_gray">#E0E0E0</color>
     <color name="accent_color">#FF4081</color>
+
+    <!-- Additional UI Colors -->
+    <color name="contact_color">#4CAF50</color>
+    <color name="donor_secondary">#7986CB</color>
+    <color name="guide_color">#FF9800</color>
 </resources>
