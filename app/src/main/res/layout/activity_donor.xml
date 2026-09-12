@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/background_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donor Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/donor_color"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btnCreateDonation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Donation"
+        android:textSize="18sp"
+        android:backgroundTint="@color/donor_color"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/ic_add"
+        android:drawablePadding="16dp"
+        android:padding="20dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnMyDonations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Donations"
+        android:textSize="18sp"
+        android:backgroundTint="@color/donor_secondary"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/ic_list"
+        android:drawablePadding="16dp"
+        android:padding="20dp"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:textSize="16sp"
+        android:backgroundTint="@color/gray"
+        android:textColor="@color/white"
+        android:padding="16dp" />
+
+</LinearLayout>
